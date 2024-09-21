@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 70%;
+       
+  }
+
+  .swiper-slide  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* padding: 1rem 1rem; */
+    background-position: center;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 14px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+
+   
+  .image{
+    position: relative;
+     width: 100%;
+     height: 100%;
+     transition: 0s;    
+  }
+  .image img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+     
+  }
+  .overlay{
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+  }
+
+    .image:hover .overlay{
+    opacity: 1;
+    height: 100%;
+      
+      
+  }
+  .button{
+    position: absolute;
+    bottom: -10%;
+    text-align: center;
+    opacity: 0;
+     transition: all 0.5s linear;
+     background-color: black;
+     color: white;
+     padding: 10px 22px;
+     border-radius: 5rem
+  }
+  .image:hover .button{
+    opacity: 1;
+    position: absolute;
+    bottom: 10%;
+     
+
+  } 
+  .button:hover{
+    background-color:#e65540;
+     border: none;
+  }
+
+  #lookbook .image1 ,.image2 {
+    
+    overflow: hidden;
+  }
+  .image1 img , .image2 img {
+
+    transition: .9s;
+  }
+  #lookbook .image1 img:hover {
+    /* transform: translateY(-11%); */
+     transform: scale(1.1);
+     object-fit: cover;
+
+  }
+  #lookbook .image2 img:hover{
+     transform: scale(1.1);
+     object-fit: cover;
+  }
+
+  
+  /* #lookbook .anchor .link:hover{
+    color: #e65540;
+
+  } */
+
+ 
+     
+  #OUR-BLOG .img1 ,#OUR-BLOG .img2,#OUR-BLOG .img3{
+    overflow: hidden;
+  }
+  .img1 img ,.img2 img ,.img3 img {
+    transition: .9s;
+  }
+  #OUR-BLOG .card:hover img{ 
+     /* transform: translateY(-11%); */
+     transform: scale(1.1);
+     object-fit: cover;
+
+  }
+  #OUR-BLOG .card:hover img {
+     transform: translate(1.1);
+     object-fit: cover;
+  }
+  
+  #OUR-BLOG .card:hover img {
+     transform: translate(1.1);
+     object-fit: cover;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    #lookbook .image2{
+      position: relative;
+    }
+    #lookbook .image2 .anchor a{
+      position: absolute;
+        text-align: center; 
+       top: 60%;
+        left:25%;
+
+    }
+    
+    #lookbook .image2 span del{
+       position: absolute;
+       top: 70%;
+       left: 20%;
+    }
+    #lookbook   .image2  span .orignal{
+      position: absolute;
+       top: 70%;
+       left: 50%;
+        
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  #Footer ul li a{
+    text-decoration: none;
+    color: black;
+  }
